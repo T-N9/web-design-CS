@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Parent wrapper div */
+.container-scroll-y{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+/* Child items divs */
+.container-scroll-y section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+}
+
+.container-scroll-y #one{
+    background-color: #DE6262;
+}
+.container-scroll-y #two{
+    background-color: #FFB88C;
+}
+.container-scroll-y #three{
+    background-color: #4D3B3B;
+}
+.container-scroll-y #four{
+    background-color: #FFD0B3;
+}
