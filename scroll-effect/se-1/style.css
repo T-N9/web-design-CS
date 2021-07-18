@@ -4,15 +4,38 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+body{
+    position: relative;
+}
+.d-none{
+    display: none;
+}
+
+#switch-btn{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    padding: 20px;
+    background: #FD0A54;
+    color: white;
+    border: 1px solid #23192D;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+#switch-btn:hover{
+    background: #F57576;
+}
 
 /* Parent wrapper div */
-.container-scroll-y{
+#container-scroll-y{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
 }
 /* Child items divs */
-.container-scroll-y section{
+#container-scroll-y section{
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,15 +44,46 @@
     scroll-snap-align: start;
 }
 
-.container-scroll-y #one{
+#container-scroll-y #one{
     background-color: #DE6262;
 }
-.container-scroll-y #two{
+#container-scroll-y #two{
     background-color: #FFB88C;
 }
-.container-scroll-y #three{
+#container-scroll-y #three{
     background-color: #4D3B3B;
 }
-.container-scroll-y #four{
+#container-scroll-y #four{
+    background-color: #FFD0B3;
+}
+
+/* :vertical */
+/* Parent wrapper div */
+#container-scroll-x{
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+}
+/* Child items divs */
+#container-scroll-x section{
+    min-width:100vw ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+}
+
+#container-scroll-x #one{
+    background-color: #DE6262;
+}
+#container-scroll-x #two{
+    background-color: #FFB88C;
+}
+#container-scroll-x #three{
+    background-color: #4D3B3B;
+}
+#container-scroll-x #four{
     background-color: #FFD0B3;
 }

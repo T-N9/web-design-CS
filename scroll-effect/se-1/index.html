@@ -11,7 +11,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container-scroll-y">
+    <div id="switch-btn">
+        Scroll X
+    </div>
+    <main id="container-scroll-y">
         <section id="one">
             <h1>First Page</h1>
         </section>
@@ -25,5 +28,22 @@
             <h1>Four Page</h1>
         </section>
     </main>
+
+    <main id="container-scroll-x" class="d-none">
+        <section id="one">
+            <h1>First Page</h1>
+        </section>
+        <section id="two">
+            <h1>Two Page</h1>
+        </section>
+        <section id="three">
+            <h1>Three Page</h1>
+        </section>
+        <section id="four">
+            <h1>Four Page</h1>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
 </body>
 </html>
