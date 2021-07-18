@@ -8,7 +8,7 @@ body{
     position: relative;
 }
 .d-none{
-    display: none;
+    display: none !important;
 }
 
 #switch-btn{
